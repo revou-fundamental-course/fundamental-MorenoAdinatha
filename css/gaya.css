@@ -1,0 +1,24 @@
+.ikon-logo{
+    height: 50px;
+    width: 50px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.nav-kontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button{
+    color: brown;
+    border: 1px solid;
+    border-radius: 50px ;
+}
+
+nav>a {
+    padding-right: 20px;
+    padding-left: 20px;
+    border: 1px solid;
+}
