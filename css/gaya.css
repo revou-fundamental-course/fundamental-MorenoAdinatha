@@ -1,24 +1,47 @@
-.ikon-logo{
+.ikon-logo {
     height: 50px;
     width: 50px;
     border: 1px solid;
     border-radius: 50px;
 }
 
-.nav-kontainer{
+
+.nav-kontainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-button{
+.nav-button {
     color: brown;
     border: 1px solid;
-    border-radius: 50px ;
+    border-radius: 50px;
 }
 
 nav>a {
     padding-right: 20px;
     padding-left: 20px;
     border: 1px solid;
+}
+
+.banner-kontainer {
+    height: 350px;
+    width: 100%;
+    border: 1px solid;
+}
+
+.ikon-profil {
+    height: 100px;
+    width: 100px;
+    border: 1px solid;
+    border-radius: 50px;
+}
+
+.konten-profil {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item-profil {
+    text-align: center;
 }
