@@ -1,11 +1,5 @@
-function gantiNama() {
-    let nama = prompt("Infokan nama kamu", "Pengunjung");
-    document.getElementById("nama").innerHTML = nama;
-}
-
-let tombol = document.getElementById("tombol").addEventListener("click", function () {
-    gantiNama();
-});
+let nama = prompt("Infokan nama kamu", "Pengunjung");
+document.getElementById("nama").innerHTML = nama;
 
 function validateForm() {
     const nama = document.getElementById("nama-lengkap").value;
