@@ -25,6 +25,9 @@ nav>a {
     border: 1px solid;
 }
 
+main {
+padding: 20px;
+}
 .banner-kontainer {
     height: 350px;
     width: 100%;
@@ -60,4 +63,10 @@ nav>a {
 
 .item-profil {
     text-align: center;
+    text-align: -webkit-center;
+    flex: 1;
+}
+
+.pemisah {
+    flex: 2;
 }
