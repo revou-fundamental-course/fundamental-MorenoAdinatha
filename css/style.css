@@ -114,3 +114,13 @@ hr {
     color: black;
     border: 3px solid red;
 }
+
+footer {
+    text-align: right;
+}
+
+.footer-highlight{
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+}
