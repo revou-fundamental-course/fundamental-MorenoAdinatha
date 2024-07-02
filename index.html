@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/gaya.css">
+    <link rel="icon" href="assets/image/botol.png">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portofolio Korpol</title>
 </head>
 
@@ -12,18 +13,18 @@
     <header class="nav-kontainer">
         <div class="ikon-logo"></div>
         <nav>
-            <a href="">Beranda</a>
+            <a href="#home">Beranda</a>
             <a href="#profil-kami">Profile</a>
-            <a href="">Portofolio</a>
-            <a href="#kontak">Hubungi Saya</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#kontak">Kontak</a>
         </nav>
     </header>
     <hr>
     <main>
         <!-- Konten Beranda -->
-        <section>
+        <section id="home">
             <header>
-                <h1>Halo Pengguna, Selamat datang di Website!</h1>
+                <h1>Halo <span id="nama">Pengunjung</span>, Selamat datang di Website!</h1>
             </header>
 
             <article>
@@ -41,26 +42,87 @@
             <article class="konten-profil">
                 <div class="item-profil">
                     <div class="ikon-profil profil1"></div>
-                    <p>Profil 1</p>
+                    <p>Bottle Hunter</p>
                 </div>
                 <div class="item-profil">
                     <div class="ikon-profil profil2"></div>
-                    <p>Profil 2</p>
+                    <p>Rongsok</p>
                 </div>
                 <div class="item-profil">
                     <div class="ikon-profil profil3"></div>
-                    <p>Profil 3</p>
+                    <p>Sirkel</p>
                 </div>
-                <div class="pemisah"></div>
+                <div class="pemisah-profil"></div>
             </article>
         </section>
-
-        <!--  -->
-
-        <!--  -->
-
-
+        <hr>
+        <!-- portofolio -->
+        <section id="portofolio">
+            <header>
+                <h1>Portofolio saya</h1>
+                <div class="portofolio-kontainer">
+                    <div class="portofolio-banner"></div>
+                    <p>Portfolio Website using Next.js</p>
+                </div>
+            </header>
+        </section>
+        <hr>
+        <!-- Kontak -->
+        <section id="kontak">
+            <header>
+                <h1>Kontak</h1>
+            </header>
+            <div class="kontak-kontainer">
+                <form name="form-pesan" onsubmit="return validateForm()">
+                    <table>
+                        <tr>
+                            <td><label for="nama-lengkap">Nama :</label></td>
+                            <td><input id="nama-lengkap" type="text" placeholder="Nama Lengkap" /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="tgllhr">Tanggal Lahir :</label></td>
+                            <td><input type="date" name="tanggal-lahir" id="tgllhr"></td>
+                        </tr>
+                        <tr>
+                            <td><label>Jenis Kelamin :</label></td>
+                            <td>
+                                <input type="radio" name="gender" id="male" value="Laki-laki" />
+                                <label for="male">Laki-laki</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="radio" name="gender" id="female" value="Perempuan" />
+                                <label for="female">Perempuan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesan">Pesan :</label></td>
+                            <td><textarea placeholder="Pesan" name="messages" id="pesan"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td align="right"><input type="submit" value="kirim"></td>
+                        </tr>
+                    </table>
+                </form>
+                <div class="view-form">
+                    <p>Tanggal Submit : <span id="tanggal-submit"></span></p>
+                    <p>Nama : <span id="nama-lengkap-pengirim"></span></p>
+                    <p>Tanggal Lahir : <span id="tanggal-lahir-pengirim"></span></p>
+                    <p>Jenis Kelamin : <span id="gender-pengirim"></span></p>
+                    <p>Pesan : <span id="pesan-pengirim"></span></p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <p>Created by <span class="footer-highlight">Moreno</span></p>
+        </footer>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
