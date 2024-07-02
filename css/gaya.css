@@ -13,27 +13,32 @@
     align-items: center;
 }
 
-.nav-button {
-    color: brown;
-    border: 1px solid;
-    border-radius: 50px;
-}
-
 nav>a {
+    margin-left: -2px;
+    margin-right: -2px;
     padding-right: 40px;
     padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid;
+    color: green;
+    text-decoration: none;
 }
 
 main {
-padding: 20px;
+    padding: 20px;
 }
+
 .banner-kontainer {
     height: 350px;
     width: 100%;
-    border: 1px solid;
+    background-size: cover;
+    background-image: url(../assets/image/kalengBekas.jpeg);
 }
 
+hr {
+    border-color: red;
+}
 
 .ikon-profil {
     height: 100px;
