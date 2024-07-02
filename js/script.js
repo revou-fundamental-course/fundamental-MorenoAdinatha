@@ -1,18 +1,19 @@
 function gantiNama() {
-let nama = prompt("Infokan nama kamu", "acumalaka");
-document.getElementById("nama").innerHTML = nama;
+    let nama = prompt("Infokan nama kamu", "Pengunjung");
+    document.getElementById("nama").innerHTML = nama;
 }
+
 let tombol = document.getElementById("tombol").addEventListener("click", function () {
-    gantiNama()
+    gantiNama();
 });
 
 function validateForm() {
     const nama = document.getElementById("nama-lengkap").value;
     const tanggalLahir = document.getElementById("tgllhr").value;
-    const gender = document.querySelector('input[name="gender"]:checked').value;
+    const gender = document.querySelector('input[name="gender"]:checked');
     const messages = document.getElementById("pesan").value;
 
-    if (nama === "" || tanggalLahir === "" || gender === "" || messages === "") {
+    if (nama === "" || tanggalLahir === "" || !gender || messages === "") {
         alert("Isilah kolom yang kosong!");
         return false;
     } else {
@@ -29,7 +30,7 @@ function validateForm() {
         // Update the view-form section
         document.getElementById("nama-lengkap-pengirim").innerText = nama;
         document.getElementById("tanggal-lahir-pengirim").innerText = tanggalLahir;
-        document.getElementById("gender-pengirim").innerText = gender;
+        document.getElementById("gender-pengirim").innerText = gender.value;
         document.getElementById("pesan-pengirim").innerText = messages;
         document.getElementById("tanggal-submit").innerText = formattedDate;
 
