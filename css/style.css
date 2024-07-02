@@ -17,11 +17,12 @@
     }
     .kontak-kontainer {
         flex-direction: column;
+        width: 100%;
     }
     .view-form {
-        padding: 5%;
-        margin: 5%;
+        padding: 0% 100%;
     }
+    
     .portofolio-banner {
         width: 100%;
         height: 30%; 
