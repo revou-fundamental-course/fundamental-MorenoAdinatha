@@ -12,6 +12,10 @@ body {
     background-size: cover;
 }
 
+nav:hover {
+    cursor: default;
+}
+
 .nav-kontainer {
     display: flex;
     justify-content: space-between;
@@ -28,6 +32,7 @@ nav>a {
     border: 1px solid;
     color: white;
     border-color: green;
+    background-color: #284200;
     text-decoration: none;
 }
 
@@ -78,7 +83,7 @@ hr {
     flex: 1;
 }
 
-.pemisah {
+.pemisah-profil {
     flex: 2;
 }
 
@@ -90,8 +95,22 @@ hr {
     width: 300px;
     height: 150px;
     background-size: cover;
-    border: 1px solid;
     background-image: url(../assets/image/MorenoPortofolio.jpeg);
     background-position: center;
     margin: auto;
+}
+
+.kontak-kontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-form {
+    padding-right: 23%;
+    padding-left: 3%;
+    margin-right: 5%;
+    background-color: white;
+    color: black;
+    border: 3px solid red;
 }

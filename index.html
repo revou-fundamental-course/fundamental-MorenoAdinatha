@@ -24,10 +24,9 @@
         <section>
             <header>
                 <h1>Halo <span id="nama">Pengunjung</span>, Selamat datang di Website!</h1>
-                <button id="tombol">Ganti nama</button>
-                <script src="js/skrip.js"></script>
+                <button id="tombol">ganti nama pengunjung</button>
             </header>
-
+            
             <article>
                 <p>Ini adalah website portfolio saya</p>
                 <div class="banner-kontainer"></div>
@@ -39,7 +38,7 @@
             <header>
                 <h1>Profil Kami</h1>
             </header>
-
+            
             <article class="konten-profil">
                 <div class="item-profil">
                     <div class="ikon-profil profil1"></div>
@@ -53,7 +52,7 @@
                     <div class="ikon-profil profil3"></div>
                     <p>Profil 3</p>
                 </div>
-                <div class="pemisah"></div>
+                <div class="pemisah-profil"></div>
             </article>
         </section>
         <hr>
@@ -63,15 +62,51 @@
                 <h1>Portofolio saya</h1>
                 <div class="portofolio-kontainer">
                     <div class="portofolio-banner"></div>
-                    <p>Portfolio Website using next js</p>
+                    <p>Portfolio Website using Next.js</p>
                 </div>
             </header>
         </section>
         <hr>
         <!-- Kontak -->
-
-
+        <section id="kontak">
+            <header>
+                <h1>Kontak</h1>
+            </header>
+            <div class="kontak-kontainer">
+                <form name="form-pesan" onsubmit="return validateForm()">
+                    <label for="nama-lengkap">Nama</label>
+                    <input id="nama-lengkap" type="text" placeholder="Nama Lengkap" />
+                    <br>
+                    
+                    <label for="tgllhr">Tanggal Lahir</label>
+                    <input type="date" name="tanggal-lahir" id="tgllhr">
+                    <br>
+                    
+                    <label>Jenis Kelamin :</label>
+                    <input type="radio" name="gender" id="male" value="male" />
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" name="gender" id="female" value="female" />
+                    <label for="female">Perempuan</label>
+                    <br>
+                    
+                    <label for="pesan">Pesan :</label>
+                    <textarea placeholder="Pesan" name="messages" id="pesan"></textarea>
+                    <br>
+                    
+                    <input type="submit" value="kirim">
+                </form>
+                <div class="view-form">
+                    <p>Tanggal Submit : <span id="tanggal-submit"></span></p>
+                    <p>Nama : <span id="nama-lengkap-pengirim"></span></p>
+                    <p>Tanggal Lahir : <span id="tanggal-lahir-pengirim"></span></p>
+                    <p>Jenis Kelamin : <span id="gender-pengirim"></span></p>
+                    <p>Pesan : <span id="pesan-pengirim"></span></p>
+                </div>
+            </div>
+        </section>
+        
     </main>
+    <script src="js/skrip.js"></script>
 </body>
 
 </html>
