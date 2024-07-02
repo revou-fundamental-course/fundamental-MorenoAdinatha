@@ -1,3 +1,8 @@
+body {
+    background-color: black;
+    color: white;
+}
+
 .ikon-logo {
     height: 50px;
     width: 50px;
@@ -21,7 +26,8 @@ nav>a {
     padding-top: 10px;
     padding-bottom: 10px;
     border: 1px solid;
-    color: green;
+    color: white;
+    border-color: green;
     text-decoration: none;
 }
 
@@ -74,4 +80,18 @@ hr {
 
 .pemisah {
     flex: 2;
+}
+
+.portofolio-kontainer {
+    text-align: center;
+}
+
+.portofolio-banner {
+    width: 300px;
+    height: 150px;
+    background-size: cover;
+    border: 1px solid;
+    background-image: url(../assets/image/MorenoPortofolio.jpeg);
+    background-position: center;
+    margin: auto;
 }
